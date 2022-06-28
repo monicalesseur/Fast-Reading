@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fast Reading</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script type="text/javascript" src="speedReader.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <img src="img1.png" class="logo"/> 
+    </div>
+    <center>
+      <header>
+        <h1>Fast Reading</h1>
+        <h3>Enter the text you want to read: </h3>
+      </header>
+      <textarea id="inputText"></textarea><br>
+      <button type="button" id="startReading" onclick="startReading()">Start Reading</button>
+      <button type="button" id="stopReading" onclick="stopReading()">Stop Reading</button>
+      <br>
+        <!--Shows current speed -->
+        <b>Speed:&nbsp &nbsp<span id="readingDelay">500</span> &nbsp ms</b>
+      <br>
+      <button type="button" id="decreaseSpeed" onclick="decreaseSpeed()">Slower</button>
+      <button type="button" id="increaseSpeed" onclick="increaseSpeed()">Faster</button><br><br></b>
+      <!--Text to be spead read-->
+      <b><div id="textDiv"></div></b>
+    </center>
+  </body>
+</html>
